@@ -39,7 +39,7 @@ class _ShowWeatherState extends State<ShowWeather> {
 
   getWeatherData(String city) async {
     final response = await http.get(
-        'https://api.openweathermap.org/data/2.5/weather?q=$city&appid=a91f7b3505c38451c5963e99bbc49282');
+        'https://api.openweathermap.org/data/2.5/weather?q=$city&appid');
 
     if (response.statusCode == 200) {
       setState(() {
